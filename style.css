@@ -1,94 +1,46 @@
+/* -------------------- General Body -------------------- */
 body {
   background: rgb(211,211,211);
-  padding: 25px;
+  padding: 25px;          /* space from edges */
   font-family: sans-serif;
   text-align: center;
- 
+  margin: 0;              /* remove extra margin */
 }
 
-
-
-
+/* -------------------- Global Image Styling -------------------- */
 img {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-   min-width: 200px;
+  width: 80%;             /* default size relative to container */
+  max-width: 100%;        /* never overflow container */
+  min-width: 250px;       /* prevent getting too small on mobile */
+  height: auto;           /* maintain aspect ratio */
+  display: block;         /* needed for margin auto to center */
+  margin: 20px auto;      /* centers image + adds vertical spacing */
+  border-radius: 10px;    /* optional: rounded corners */
+  border: 3px solid black; /* optional: border for style */
 }
 
-img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-
-.intro{
-  margin: 6em;
-}
-
-p{
+/* -------------------- Text Styling -------------------- */
+p {
   font-size: 1.3em;
 }
 
-.description{
+.description {
   text-align: center;
 }
 
-.horacio{
-  width: 35em;
-  margin: auto;
-}
-
-.countach{
-  width: 35em;
-  margin:auto;
-}
-
-.zonda{
-  width: 35em;
-  margin: auto;
-}
-
-.utopia{
-  width: 35em;
-  margin: auto
-
-
-
-.intro{
+.intro {
   margin: 6em;
 }
 
-p{
-  font-size: 1.3em;
+/* -------------------- Specific Images (Optional Max Widths) -------------------- */
+.horacio, .countach, .zonda, .utopia {
+  max-width: 560px;       /* limit desktop size */
 }
 
-.description{
-  text-align: center;
-}
-
-.horacio{
-  width: 35em;
-  margin: auto;
-}
-
-.countach{
-  width: 35em;
-  margin:auto;
-}
-
-.zonda{
-  width: 35em;
-  margin: auto;
-}
-
-.utopia{
-  width: 35em;
-  margin: auto;
+/* -------------------- Mobile-Specific Adjustments -------------------- */
+@media (max-width: 768px) {
+  img {
+    width: 95%;            /* nearly full width on tablets/phones */
+    min-width: 200px;      /* maintain minimum size */
+  }
 }
