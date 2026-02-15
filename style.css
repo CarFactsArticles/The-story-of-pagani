@@ -11,17 +11,53 @@ body {
 
 img {
   width: 80%;
-  max-width: 800px;
-  height: auto;
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+   min-width: 200px;
 }
 
 img {
+  display: block;
+  margin: 20px auto;
   max-width: 100%;
   height: auto;
 }
 
+
+
+
+.intro{
+  margin: 6em;
+}
+
+p{
+  font-size: 1.3em;
+}
+
+.description{
+  text-align: center;
+}
+
+.horacio{
+  width: 35em;
+  margin: auto;
+}
+
+.countach{
+  width: 35em;
+  margin:auto;
+}
+
+.zonda{
+  width: 35em;
+  margin: auto;
+}
+
+.utopia{
+  width: 35em;
+  margin: auto
 
 
 
